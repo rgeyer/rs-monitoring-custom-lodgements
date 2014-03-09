@@ -6,7 +6,7 @@ CRON_HOURLY_DIR=/etc/cron.hourly
 
 if [ ! -e "$CRON_HOURLY_DIR" ]
 then
-  echo "This script expects anacron type functionality with an /etc/cron.hourly directory. No /etc/cron.hourly directory was found."
+  echo "This script expects cron to be configured to run any script found at /etc/cron.hourly directory. No /etc/cron.hourly directory was found."
 fi
 
 cd /tmp
