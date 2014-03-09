@@ -19,3 +19,17 @@ using this one-liner.
 ```
 find /var/lib/collectd -name *.rrd | wc -l
 ```
+
+rightscript-install.sh
+----------------------
+Intended to be run as a boot script on a RightScale ServerTemplate to install
+create_custom_lodgements as an hourly cron job.  It also installs all the
+necessary dependencies.
+
+rightscript-enable-rrdtool.sh
+-----------------------------
+Enables rrdtool for collectd by creating a config file containing the following.
+
+```
+LoadPlugin rrdtool
+```
